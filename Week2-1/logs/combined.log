@@ -1,0 +1,5 @@
+{"level":"info","message":"Calculator microservice listening at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Operation: multiply | 4 multiply 2 = 8","service":"calculator-microservice"}
+{"level":"info","message":"Operation: add | 4 add 9 = 13","service":"calculator-microservice"}
+{"level":"info","message":"Operation: subtract | 4 subtract 7 = -3","service":"calculator-microservice"}
+{"level":"info","message":"Operation: divide | 4 divide 2 = 2","service":"calculator-microservice"}
