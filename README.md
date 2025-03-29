@@ -1,7 +1,7 @@
-# SIT737 Cloud Native Application Development Tasks
+# SIT737 Cloud Native Application Development 
 
 ## Setup Tools and Working Environment
-This guide outlines how to install and set up the required tools and environment for running the Calculator Microservice project.
+This guide outlines how to install and set up the required tools and environment for running the SIT737 Cloud Native Application Development Weekly Tasks.
 
 ### Summary of Required Tools
 
