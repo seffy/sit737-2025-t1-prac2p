@@ -1,0 +1,5 @@
+{"level":"info","message":"Calculator microservice listening at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Operation: power | 2 power 3 = 8","service":"calculator-microservice"}
+{"level":"info","message":"Operation: sqrt | √2 = 1.4142135623730951","service":"calculator-microservice"}
+{"level":"info","message":"Operation: mod | 2 mod 3 = 2","service":"calculator-microservice"}
+{"level":"info","message":"Operation: add | 2 add 3 = 5","service":"calculator-microservice"}
