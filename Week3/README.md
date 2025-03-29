@@ -22,22 +22,19 @@ This week’s task enhances the calculator microservice by adding support for ad
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/seffy/sit737-2025-t1-prac2p
-cd Week3
-```
+    git clone https://github.com/seffy/sit737-2025-t1-prac2p
+    cd Week3
+
 
 ### 2. Install Dependencies
 
-```bash
-npm install
-```
+    npm install
+
 
 ### 3. Start the Server
 
-```bash
-node server.js
-```
+    node server.js
+
 Server will run at: http://localhost:3000
 
 
