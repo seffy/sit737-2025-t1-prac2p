@@ -18,22 +18,18 @@ A Node.js microservice that performs basic arithmetic operations (add, subtract,
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/seffy/sit737-2025-t1-prac2p/Week2-1
-cd Week2-1
-```
+    git clone https://github.com/seffy/sit737-2025-t1-prac2p/Week2-1
+    cd Week2-1
+
 
 ### 2. Install Dependencies
 
-```bash
-npm install
-```
+    npm install
 
 ### 3. Start the Server
 
-```bash
-node server.js
-```
+    node server.js
+
 
 ## API Endpoints
 
@@ -47,11 +43,10 @@ node server.js
 
 ## Sample Response
 
-```bash
-{
-  "result": 6
-}
-```
+    {
+      "result": 6
+    }
+
 
 ## Logging with Winston
 Logs are stored in the logs directory for easy monitoring and troubleshooting:
@@ -63,9 +58,8 @@ Logs are stored in the logs directory for easy monitoring and troubleshooting:
 
 To watch logs in real-time:
 
-```bash
-tail -f logs/combined.log
-```
+    tail -f logs/combined.log
+
 
 
 
