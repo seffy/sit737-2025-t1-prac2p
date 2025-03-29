@@ -1,6 +1,33 @@
 # SIT737 Cloud Native Application Development 
 
-## Setup Tools and Working Environment
+
+## Getting Started - How to Run 
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/seffy/sit737-2025-t1-prac2p
+cd [Folder Name]
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Server
+
+```bash
+node server.js
+```
+
+
+#
+#
+ 
+
+## Tools and Working Environment
 This guide outlines how to install and set up the required tools and environment for running the SIT737 Cloud Native Application Development Weekly Tasks.
 
 ### Summary of Required Tools
