@@ -24,7 +24,7 @@ This week’s task enhances the calculator microservice by adding support for ad
 
 ```bash
 git clone https://github.com/seffy/sit737-2025-t1-prac2p
-cd [Folder Name]
+cd Week3
 ```
 
 ### 2. Install Dependencies
