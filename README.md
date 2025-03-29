@@ -34,11 +34,11 @@ This guide outlines how to install and set up the required tools and environment
 
 | Tool			 | Purpose		|			|
 |------------------------|----------------------|-----------------------|
-| Node.js	         | Backend runtime	| Week 1,2,3,4,5	|
-| Express	         | API framework	| Week 1,2,3,4,5	|
 | Visual Studio Code     | Code editor		| Week 1,2,3,4,5	|
 | Git	                 | Version control	| Week 1,2,3,4,5	|
-| GitHub	         | Code hosting		| Week 1,2,3,4,5	|
+| GitHub (or GitHub Desktop)	         | Code hosting		| Week 1,2,3,4,5	|
+| Node.js	         | Backend runtime	| Week 1,2,3,4,5	|
+| Express	         | API framework	| Week 1,2,3,4,5	|
 | Winston	         | Logging system	| Week 2,3		|
 | Postman	         | API testing		| Week 3 		|
 
@@ -72,8 +72,8 @@ git --version
 
 3. Set Up GitHub Repository
    1. Go to https://github.com and sign in or create an account.
-   2. Create a new public repository
-   3. Clone it to your local machine
+   2. Create a new public repository and follow on screen instructions.
+   3. Clone it to your local machine using the generated code or using web URL via Github Desktop.
    4. After coding:
 
 ```bash
