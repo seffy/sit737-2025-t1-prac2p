@@ -1,7 +1,7 @@
 # SIT737 Cloud Native Application Development 
 
 
-## Getting Started - How to Run 
+## Getting Started
 
 ### 1. Clone the Repository
 
