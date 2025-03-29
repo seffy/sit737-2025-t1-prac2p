@@ -5,27 +5,20 @@
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/seffy/sit737-2025-t1-prac2p
-cd [Folder Name]
-```
+    git clone https://github.com/seffy/sit737-2025-t1-prac2p
+    cd [Folder Name]
+
 
 ### 2. Install Dependencies
 
-```bash
-npm install
-```
+    npm install
 
 ### 3. Start the Server
 
-```bash
-node server.js
-```
-
+    node server.js
 
 #
 #
- 
 
 ## Tools and Working Environment
 This guide outlines how to install and set up the required tools and environment for running the SIT737 Cloud Native Application Development Weekly Tasks.
@@ -64,9 +57,8 @@ Optionally, install useful extensions:
      2. Download and install Git for your OS.
 
 To verify:
-```bash
-git --version
-```
+
+    git --version
 
 ---
 
@@ -76,11 +68,10 @@ git --version
    3. Clone it to your local machine using the generated code or using web URL via Github Desktop.
    4. After coding:
 
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
+          git add .
+          git commit -m "Initial commit"
+          git push origin main
+
 
 ---
 
@@ -94,10 +85,8 @@ git push origin main
 
 To verify installation:
 
-```bash
-node -v
-npm -v
-```
+    node -v
+    npm -v
 
 ---
 
@@ -106,18 +95,16 @@ npm -v
 - Express is a lightweight Node.js web framework.
 - Once Node.js is installed:
 
-```bash
-npm install express
-```
+      npm install express
 
 You’ll typically run this inside your project folder (e.g., after running npm init).
 
 ---
 
 6. Install Winston (Logging Library)
-```bash
-npm install winston
-```
+
+       npm install winston
+
 This will enable console and file-based logging in your microservice.
 
 ---
@@ -134,6 +121,18 @@ This will enable console and file-based logging in your microservice.
 ---
 
 8. To Be Announced
+
+
+
+#
+#
+#
+### (Personal Use) Setting up basic NodeJS project
+    mkdir Week4
+    cd Week4
+    npm init -y
+    npm install express winston
+
 
 
  ### Author: 
