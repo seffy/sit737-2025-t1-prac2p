@@ -32,15 +32,15 @@ This guide outlines how to install and set up the required tools and environment
 
 ### Summary of Required Tools
 
-| Tool			 | Purpose		|			|
-|------------------------|----------------------|-----------------------|
-| Visual Studio Code     | Code editor		| Week 1,2,3,4,5	|
-| Git	                 | Version control	| Week 1,2,3,4,5	|
-| GitHub (or GitHub Desktop)	         | Code hosting		| Week 1,2,3,4,5	|
-| Node.js	         | Backend runtime	| Week 1,2,3,4,5	|
-| Express	         | API framework	| Week 1,2,3,4,5	|
-| Winston	         | Logging system	| Week 2,3		|
-| Postman	         | API testing		| Week 3 		|
+| | Tool			 | Purpose		|			|
+|--|----------------------|----------------------|-----------------------|
+| 1 | Visual Studio Code     | Code editor		| Week 1,2,3,4,5	|
+| 2 | Git	                 | Version control	| Week 1,2,3,4,5	|
+| 3 | GitHub (or GitHub Desktop)	         | Code hosting		| Week 1,2,3,4,5	|
+| 4 | Node.js	         | Backend runtime	| Week 1,2,3,4,5	|
+| 5 | Express	         | API framework	| Week 1,2,3,4,5	|
+| 6 | Winston	         | Logging system	| Week 2,3		|
+| 7 | Postman	         | API testing		| Week 3 		|
 
 ---
 
