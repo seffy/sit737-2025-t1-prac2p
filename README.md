@@ -37,16 +37,15 @@ This guide outlines how to install and set up the required tools and environment
 ---
 
 1. Install Visual Studio Code (VS Code)
-
-A lightweight and powerful source-code editor.
-- Visit: https://code.visualstudio.com/
-- Download and install for your platform.
-
-Optionally, install useful extensions:
-- ESLint
-- Prettier
-- GitHub Copilot (if available)
-- REST Client (to test endpoints)
+    A lightweight and powerful source-code editor.
+    - Visit: https://code.visualstudio.com/
+    - Download and install for your platform.
+    
+    Optionally, install useful extensions:
+    - ESLint
+    - Prettier
+    - GitHub Copilot (if available)
+    - REST Client (to test endpoints)
 
 ---
 
@@ -90,13 +89,12 @@ To verify installation:
 ---
 
 5. Install Express (via npm)
-
-- Express is a lightweight Node.js web framework.
-- Once Node.js is installed:
-
-      npm install express
-
-You’ll typically run this inside your project folder (e.g., after running npm init).
+    - Express is a lightweight Node.js web framework.
+    - Once Node.js is installed:
+    
+          npm install express
+    
+    You’ll typically run this inside your project folder (e.g., after running npm init).
 
 ---
 
