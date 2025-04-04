@@ -8,7 +8,6 @@
     git clone https://github.com/seffy/sit737-2025-t1-prac2p
     cd [Folder Name]
 
-
 ### 2. Install Dependencies
 
     npm install
@@ -18,9 +17,8 @@
     node server.js
 
 #
-#
 
-## Tools and Working Environment
+## Tools and Working Environment (Installation Instructions)
 This guide outlines how to install and set up the required tools and environment for running the SIT737 Cloud Native Application Development Weekly Tasks.
 
 ### Summary of Required Tools
@@ -34,6 +32,7 @@ This guide outlines how to install and set up the required tools and environment
 | 5 | Express	         | API framework	| Week 1,2,3,4,5	|
 | 6 | Winston	         | Logging system	| Week 2,3		|
 | 7 | Postman	         | API testing		| Week 3 		|
+| 8 | Docker	         | Containerisation platform for packaging and running the application		| Week 4 		|
 
 ---
 
@@ -119,8 +118,27 @@ This will enable console and file-based logging in your microservice.
    	6. Hit Send and view the result
 
 ---
+8. Install Docker
+   1. Go to the official Docker website: https://www.docker.com/products/docker-desktop
+   2. Download Docker Desktop
+   3. Choose the version that matches your operating system (Windows, macOS, or Linux).
+   4. Run the installer
+   5. Follow the on-screen instructions to install Docker Desktop.
+   6. Launch Docker Desktop
+   7. After installation, open Docker Desktop to ensure it's running correctly.
+   8. You should see the Docker icon in your system tray or menu bar.
+   9. Verify Installation
+   10. Open a terminal or command prompt and run:
 
-8. To Be Announced
+           docker --version
+    If Docker is installed correctly, it will display the version number.
+
+
+---
+
+...
+
+9. To Be Announced
 
 
 
