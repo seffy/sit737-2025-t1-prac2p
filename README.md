@@ -120,8 +120,8 @@ This guide outlines how to install and set up the required tools and environment
      2. Download and install Git for your OS.
 
         To verify:
-    
-            git --version
+
+        	git --version
 
 **Set Up GitHub Repository**
    1. Go to https://github.com and sign in or create an account.
@@ -138,28 +138,26 @@ This guide outlines how to install and set up the required tools and environment
 
 ### Node.js & Express
    -** Node.js is a JavaScript runtime used to run backend code.**
-     1. Visit: https://nodejs.org/en/download
-     2. Download the LTS version for your OS.
-     3. Follow the installer instructions.
+   1. Visit: https://nodejs.org/en/download
+   2. Download the LTS version for your OS.
+   3. Follow the installer instructions.
+   4. To verify installation:
 
-        To verify installation:
-    
-            node -v
-            npm -v
+      		node -v
+      		npm -v
 
  - **Install Express (via npm)**
     - Express is a lightweight Node.js web framework.
     - Once Node.js is installed:
-    
-          npm install express
+      
+      		npm install express
 
 You’ll typically run this inside your project folder (e.g., after running npm init).
 
 ---
 
 ### Winston Logging
-
-       npm install winston
+	npm install winston
 
 This will enable console and file-based logging in your microservice.
 
