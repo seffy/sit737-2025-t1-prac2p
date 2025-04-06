@@ -1,24 +1,88 @@
-# SIT737 Cloud Native Application Development 
+# SIT737 Cloud Native Application Development
+
+Welcome to the SIT737 Cloud Native Application Development repository. This project is designed to help you learn and apply cloud-native practices using modern tools such as Node.js, Express, Docker, and more. It contains weekly tasks and practical exercises to build your skills in developing scalable and maintainable applications.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [Clone the Repository](#clone-the-repository)
+  - [Install Dependencies](#install-dependencies)
+  - [Start the Server](#start-the-server)
+- [Development Environment Setup](#development-environment-setup)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Git & GitHub](#git--github)
+  - [Node.js & Express](#nodejs--express)
+  - [Winston Logging](#winston-logging)
+  - [Postman for API Testing](#postman-for-api-testing)
+  - [Docker](#docker)
+- [Usage](#usage)
+- [Additional Notes](#additional-notes)
+- [Contributing](#contributing)
+- [Author & Contact](#author--contact)
+- [License](#license)
+
+## Overview
+
+This repository provides a practical approach to cloud-native application development. Key learning areas include:
+
+- **Backend Development:** Creating lightweight and robust APIs with Node.js and Express.
+- **Logging:** Implementing logging with Winston to monitor application behavior.
+- **Containerization:** Packaging your application using Docker for consistency and scalability.
+- **Testing:** Utilizing Postman to ensure your API endpoints perform as expected.
+
+## Project Structure
+
+A typical project structure is as follows:
+
+	├── Week1/
+	├── Week2/
+	├── Week3/
+	├── ...
+	└── README.md # Project documentation (this file) 
 
 
-## Getting Started
+## Prerequisites
 
-### 1. Clone the Repository
+Before you begin, ensure you have you install what is only required in each tasks:
 
-    git clone https://github.com/seffy/sit737-2025-t1-prac2p
-    cd [Folder Name]
+- **Visual Studio Code (VS Code):** A powerful and lightweight code editor.
+- **Git:** Version control system.
+- **Node.js (v14+ recommended):** JavaScript runtime for server-side development.
+- **npm:** Node package manager.
+- **Docker:** For containerizing the application.
+- **Postman:** API testing tool.
+- TBD
 
-### 2. Install Dependencies
+## Installation
+
+### Clone the Repository
+Open your terminal and clone the repository using Git:
+
+    git clone https://github.com/seffy/sit737-2025-t1-prac2p.git
+    cd sit737-2025-t1-prac2p
+
+### Install Dependencies
+Install the project dependencies with npm:
 
     npm install
 
-### 3. Start the Server
+This installs essential packages like:
+
+'Express': To create the web server and define API routes.
+'Winston': For logging system events.
+Other dependencies as defined in 'package.json'.
+    
+### Start the Server
 
     node server.js
+    
+The server should now be running on http://localhost:3000.
 
-#
 
-## Tools and Working Environment (Installation Instructions)
+## Development Environment Setup
 This guide outlines how to install and set up the required tools and environment for running the SIT737 Cloud Native Application Development Weekly Tasks.
 
 ### Summary of Required Tools
@@ -36,77 +100,71 @@ This guide outlines how to install and set up the required tools and environment
 
 ---
 
-1. Install Visual Studio Code (VS Code)
-    A lightweight and powerful source-code editor.
-    - Visit: https://code.visualstudio.com/
-    - Download and install for your platform.
+### Visual Studio Code
+- A lightweight and powerful source-code editor.
+- Visit: https://code.visualstudio.com/
+- Download and install for your platform.
     
-    Optionally, install useful extensions:
-    - ESLint
-    - Prettier
-    - GitHub Copilot (if available)
-    - REST Client (to test endpoints)
+  Recommended Extensions:
+   - ESLint: For identifying and reporting on patterns in JavaScript.
+   - Prettier: For code formatting.
+   - GitHub Copilot: For AI-assisted code suggestions (if available).
+   - REST Client: To directly test API endpoints within VS Code.
 
 ---
 
-2. Install Git (Version Control System)
+###  Git & GitHub
+**Git (Version Control System)**
    - Git is required for version control and pushing code to GitHub.
      1. Visit: https://git-scm.com/downloads
      2. Download and install Git for your OS.
 
-To verify:
+        To verify:
 
-    git --version
+        	git --version
 
----
-
-3. Set Up GitHub Repository
+**Set Up GitHub Repository**
    1. Go to https://github.com and sign in or create an account.
    2. Create a new public repository and follow on screen instructions.
    3. Clone it to your local machine using the generated code or using web URL via Github Desktop.
-   4. After coding:
+   
+       After coding:
 
           git add .
           git commit -m "Initial commit"
           git push origin main
 
-
 ---
 
+### Node.js & Express
+   -** Node.js is a JavaScript runtime used to run backend code.**
+   1. Visit: https://nodejs.org/en/download
+   2. Download the LTS version for your OS.
+   3. Follow the installer instructions.
+   4. To verify installation:
 
+      		node -v
+      		npm -v
 
-4. Install Node.js
-   - Node.js is a JavaScript runtime used to run backend code.
-     1. Visit: https://nodejs.org/en/download
-     2. Download the LTS version for your OS.
-     3. Follow the installer instructions.
-
-To verify installation:
-
-    node -v
-    npm -v
-
----
-
-5. Install Express (via npm)
+ - **Install Express (via npm)**
     - Express is a lightweight Node.js web framework.
     - Once Node.js is installed:
-    
-          npm install express
-    
-    You’ll typically run this inside your project folder (e.g., after running npm init).
+      
+      		npm install express
+
+You’ll typically run this inside your project folder (e.g., after running npm init).
 
 ---
 
-6. Install Winston (Logging Library)
-
-       npm install winston
+### Winston Logging
+	npm install winston
 
 This will enable console and file-based logging in your microservice.
 
 ---
 
-7. Install Postman (for API Testing)
+
+### Postman for API Testing
    Postman is used to test your REST API endpoints.
    	1. Download from: https://www.postman.com/downloads/
    	2. After installation, open Postman and:
@@ -116,7 +174,7 @@ This will enable console and file-based logging in your microservice.
    	6. Hit Send and view the result
 
 ---
-8. Install Docker
+### Docker
    1. Go to the official Docker website: https://www.docker.com/products/docker-desktop
    2. Download Docker Desktop
    3. Choose the version that matches your operating system (Windows, macOS, or Linux).
@@ -128,8 +186,9 @@ This will enable console and file-based logging in your microservice.
    9. Verify Installation
    10. Open a terminal or command prompt and run:
 
-           docker --version
-    If Docker is installed correctly, it will display the version number.
+    docker --version
+    
+If Docker is installed correctly, it will display the version number.
 
 
 ---
@@ -151,7 +210,7 @@ This will enable console and file-based logging in your microservice.
 
 
 
- ### Author: 
+ ### Author & Contact
  	Joseph
  	DU S739 Student
  	SIT737 Cloud Native Application Development 
