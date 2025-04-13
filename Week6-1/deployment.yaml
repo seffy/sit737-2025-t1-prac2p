@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hirebuddy-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hirebuddy
+  template:
+    metadata:
+      labels:
+        app: hirebuddy
+    spec:
+      containers:
+        - name: hirebuddy-container
+          image: josabana/sit737hirebuddy
+          ports:
+            - containerPort: 3000
