@@ -141,17 +141,6 @@ This should load the HireBuddy login page.
 
 ---
 
-## 📸 Screenshots (add these to your repo or report)
-
-- Terminal output for `kubectl get pods` and `kubectl get services`
-- Screenshot of `curl` showing redirect
-- Browser showing login screen
-
----
-
-## 🧠 Reflection
-
-This task provided practical experience in containerizing and deploying a microservice using Kubernetes. By leveraging Docker Desktop and Kubernetes manifests, we learned how to structure declarative configurations, expose services, and troubleshoot application connectivity. Understanding how to build, deploy, and scale apps in Kubernetes is essential for modern DevOps workflows.
 
 ---
 
