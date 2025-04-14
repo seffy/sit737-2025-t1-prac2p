@@ -96,14 +96,3 @@ Visit: `http://localhost:3000`
 - `service.yaml`
 
 ---
-
-## 🔗 Repository and Submission Notes
-
-Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder:
-
-📂 **Main Repo (Task Code):**  
-[https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
-
-
----
-
