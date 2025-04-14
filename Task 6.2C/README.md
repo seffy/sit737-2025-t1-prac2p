@@ -2,96 +2,102 @@
 
 ## ✅ Overview
 
-In this task, we extended our Kubernetes deployment skills by interacting with the running cluster using `kubectl` and Kubernetes Dashboard. We also updated our Node.js application by creating a new Docker image version, then rolled out the update using Kubernetes.
+In Task 6.2C, we built upon our Kubernetes deployment from Task 6.1P by interacting directly with the deployed application using `kubectl` and port forwarding. We also updated the Node.js application, rebuilt it with a new image tag, and rolled out the updated version using Kubernetes.
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Required Tools
 
-- Docker Desktop (with Kubernetes enabled)
-- Node.js
-- Docker CLI
-- kubectl
-- Git + GitHub
 - Visual Studio Code
+- Git + GitHub
+- Node.js
+- Express.js
+- Docker + Docker Compose
+- Kubernetes + kubectl (Docker Desktop)
+- Kubernetes Dashboard (optional)
 
 ---
 
-## 📁 Project Structure
+## 🔹 Part 1: Interact with the Deployed Application
 
-```
-sit737hirebuddy/
-├── Dockerfile
-├── deployment.yaml
-├── service.yaml
-├── README.md
-└── (Updated Node.js source files)
-```
-
----
-
-## 🔹 Part I – Interacting with the Running App
-
-### ✅ Check Cluster Resources
+### 1. Verify Kubernetes Cluster and Pod
 ```bash
+kubectl cluster-info
+kubectl get nodes
 kubectl get pods
 kubectl get services
 ```
 
-### ✅ Port Forwarding to Access App
+### 2. Port Forward to the Pod
 ```bash
-kubectl port-forward pod/<pod-name> 3000:3000
+kubectl port-forward pod/hirebuddy-deployment-<pod-id> 3000:3000
 ```
 
-Then access in browser:
+### 3. Open App in Browser
 ```
 http://localhost:3000
 ```
 
 ---
 
-## 🔹 Part II – Updating the Application
+## 🔹 Part 2: Update the Application
 
-### ✅ Modify the App
-We updated the application (e.g., changed UI text or page title) to simulate a version update.
+### 1. Modify App Code
+In `server.js`, we updated the homepage response:
+```js
+res.send('Welcome to HireBuddy, Buddy!');
+```
 
-### ✅ Build and Push New Docker Image
+### 2. Rebuild and Push Docker Image
 ```bash
 docker build -t josabana/sit737hirebuddy:v2 .
 docker push josabana/sit737hirebuddy:v2
 ```
 
-### ✅ Update Deployment YAML
-Edit `deployment.yaml`:
+### 3. Update Kubernetes Deployment
+In `deployment.yaml`:
 ```yaml
-image: josabana/sit737hirebuddy:v2
+containers:
+  - name: hirebuddy-container
+    image: josabana/sit737hirebuddy:v2
 ```
 
-Then apply and verify:
+### 4. Apply Changes and Verify
 ```bash
 kubectl apply -f deployment.yaml
 kubectl rollout status deployment hirebuddy-deployment
 ```
 
----
+### 5. Port Forward New Pod and Access
+```bash
+kubectl get pods
+kubectl port-forward pod/hirebuddy-deployment-<new-pod-id> 3000:3000
+```
 
-## 📸 Screenshots
-
-- `kubectl get pods` showing deployment status
-- Kubernetes Dashboard showing pod and deployment running
-- App output in browser after update
-- Terminal showing successful port forwarding
-
----
-
-## 📁 Note on Submission
-
-Due to Git submodule sync issues, the files for Task 6.1P and 6.2C are uploaded to:
-
-🔗 [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
+Visit: `http://localhost:3000`
 
 ---
 
-## 🧠 Reflection
+## 📁 Source Files
 
-This task demonstrated how we can interact with live workloads in Kubernetes using CLI and dashboard tools. We also simulated a version upgrade scenario to understand rolling updates in cloud-native applications. This mirrors real-world CI/CD pipelines and shows how DevOps teams manage deployments at scale.
+- `Dockerfile`
+- `deployment.yaml` (with image tag `v2`)
+- `service.yaml`
+
+---
+
+## 🔗 Repository and Submission Notes
+
+Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder within the main repository:
+
+📂 **Main Repo (Task Code):**  
+[https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
+
+📁 **Submission Folder Reference (6.1P and 6.2C):**  
+[https://github.com/seffy/sit737-2025-t1-prac2p/tree/main/Task6.1P%20and%206.2C](https://github.com/seffy/sit737-2025-t1-prac2p/tree/main/Task6.1P%20and%206.2C)
+
+---
+
+## 🧠 Summary
+
+This task helped us build confidence in interacting with Kubernetes using the CLI, performing live updates via port forwarding, and simulating a real production upgrade using tagged Docker images. We learned the lifecycle of deploying, updating, and testing containerized applications using Kubernetes clusters in a local environment.
