@@ -31,26 +31,27 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 ### 3. Create a Service Account
 
+dashboard-adminuser.yaml
+
 ```bash
-kubectl apply -f - <<EOF
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: admin-user
   namespace: kubernetes-dashboard
-EOF
 ```
 
 ---
 
 ### 4. Bind the Service Account to a Cluster Role
 
+cluster_role_binding.yaml
+
 ```bash
-kubectl apply -f - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: admin-user-binding
+  name: admin-user
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -59,12 +60,23 @@ subjects:
 - kind: ServiceAccount
   name: admin-user
   namespace: kubernetes-dashboard
-EOF
+
 ```
+### 5. Open Terminal
+Run:
+
+```bash
+kubectl apply -f dashboard-adminuser.yaml
+```
+
+```bash
+kubectl apply -f cluster_role_binding.yaml
+```
+
 
 ---
 
-### 5. Retrieve the Login Token
+### 6. Retrieve the Login Token
 
 ```bash
 kubectl -n kubernetes-dashboard create token admin-user
@@ -74,7 +86,7 @@ Copy the token and paste it into the Dashboard login page.
 
 ---
 
-### 6. Access the Dashboard
+### 7. Access the Dashboard
 
 Go to the following URL in your browser:
 
@@ -85,9 +97,3 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 Login using the token.
 
 ---
-
-
-### 7. Generate Token: 
-```bash
-kubectl -n kubernetes-dashboard create token admin-user
-```
