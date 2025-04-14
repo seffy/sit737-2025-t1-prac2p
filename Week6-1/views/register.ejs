@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HireBuddy - Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-2">
+	<div class="overlay"></div>
+	   <div class="reg-container">
+         <div class="r-form-container">
+            <div class="logo"></div>
+	  <div class="spacer-10"></div>
+            <h2 class="">Register</h2>
+	  <!--
+    <% if (typeof error !== 'undefined') { %>
+      <p class="error"><%= error %></p>
+    <% } %> -->
+   	             <form action="/register" method="POST">
+                     <div class="input-group">
+                        <input class="input" required autocomplete="off" type="text" name="name" id="name">
+                        <label class="label" for="username">Full Name</label>
+                     </div>
+                     <div class="input-group">
+                        <input class="input" required autocomplete="off" type="email" name="email" id="email">
+                        <label class="label" for="email">Email Address</label>
+                     </div>
+                     <div class="input-group">
+                        <input class="input" required autocomplete="off" id="password" name="password" type="password">
+                        <label class="label" for="password">Password</label>	  
+                     </div>
+                     <div class="input-group">
+                        <input class="input" required autocomplete="off" id="confirmPassword" name="confirmPassword" type="password">
+                        <label class="label" for="confirmpassword">Confirm Password</label>	  
+                     </div>
+                     <button type="submit" class="btn-reg">Register</button>
+                  </form>
+            <div class="spacer-10"></div>
+            <p>Already have an account? <a href="/login">Login here</a></p>
+         </div>
+    
+	
+		<script src="/js/script.js"></script>
+</body>
+</html>
