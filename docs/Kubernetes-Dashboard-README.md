@@ -88,6 +88,6 @@ Login using the token.
 
 
 ### 7. Generate Token: 
-
-      kubectl -n kubernetes-dashboard create token admin-user
-
+```bash
+kubectl -n kubernetes-dashboard create token admin-user
+```
