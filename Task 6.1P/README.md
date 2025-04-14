@@ -7,7 +7,7 @@
 
 🔗 [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
 
-Please refer to that folder for all deployment files, screenshots, and task documentation.
+Please refer to that folder for all deployment files and documentation.
 
 
 
