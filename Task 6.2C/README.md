@@ -1,5 +1,16 @@
 # SIT737 Task 6.2C – Interacting with Kubernetes and Updating Deployment
 
+
+## 📁 Note on Submission Location
+
+📌 Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder within the main repository:
+
+🔗 [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
+
+Please refer to that folder for all deployment files and documentation.
+
+
+
 ## ✅ Overview
 
 In Task 6.2C, we built upon our Kubernetes deployment from Task 6.1P by interacting directly with the deployed application using `kubectl` and port forwarding. We also updated the Node.js application, rebuilt it with a new image tag, and rolled out the updated version using Kubernetes.
