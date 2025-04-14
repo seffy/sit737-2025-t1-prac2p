@@ -88,16 +88,11 @@ Visit: `http://localhost:3000`
 
 ## 🔗 Repository and Submission Notes
 
-Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder within the main repository:
+Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder:
 
 📂 **Main Repo (Task Code):**  
 [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
 
-📁 **Submission Folder Reference (6.1P and 6.2C):**  
-[https://github.com/seffy/sit737-2025-t1-prac2p/tree/main/Task6.1P%20and%206.2C](https://github.com/seffy/sit737-2025-t1-prac2p/tree/main/Task6.1P%20and%206.2C)
 
 ---
 
-## 🧠 Summary
-
-This task helped us build confidence in interacting with Kubernetes using the CLI, performing live updates via port forwarding, and simulating a real production upgrade using tagged Docker images. We learned the lifecycle of deploying, updating, and testing containerized applications using Kubernetes clusters in a local environment.
