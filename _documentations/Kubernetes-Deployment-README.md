@@ -1,46 +1,5 @@
 # 📦 SIT737 Task 6.1P – Kubernetes Deployment of HireBuddy
 
-
-## 📁 Note on Submission Location
-
-📌 Due to a Git submodule-related error during commit and push, the source code and files for **Task 6.1P** and **Task 6.2C** have been uploaded in the following folder within the main repository:
-
-🔗 [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
-
-Please refer to that folder for all deployment files and documentation.
-
-
-
-
-## ✅ Overview
-
-This task demonstrates how we deployed the HireBuddy Node.js application into a Kubernetes cluster using Docker Desktop. The application was containerized using Docker, uploaded to Docker Hub, and deployed to the cluster using Kubernetes manifests. The app was then exposed via a NodePort service and tested through both browser and terminal.
-
----
-
-## 🛠️ Tools Used
-
-- **Docker Desktop** (with Kubernetes enabled)
-- **Node.js**
-- **Docker CLI**
-- **kubectl** (Kubernetes CLI)
-- **Git + GitHub**
-- **Visual Studio Code**
-
----
-
-## 📁 Project Structure
-
-```
-sit737hirebuddy/
-├── Dockerfile
-├── deployment.yaml
-├── service.yaml
-└── README.md
-```
-
----
-
 ## 🚀 Step-by-Step Deployment Instructions
 
 ### 1. ✅ Enable Kubernetes on Docker Desktop
@@ -152,6 +111,29 @@ http://localhost:30007/login
 This should load the HireBuddy login page.
 
 ---
+
+
+
+
+## Note:
+
+If you update files locally and you want those changes to show in your running container, you can: 
+
+**Rebuild the Docker Image**
+Stop your containers and rebuild your image so that the updated files are copied into the image. Then restart your containers:
+
+```bash 
+docker-compose down
+docker-compose up --build
+
+```
+This method works, but you’ll have to rebuild each time you make a change.
+
+
+
+
+
+
 
 ## 🔗 Repository
 
