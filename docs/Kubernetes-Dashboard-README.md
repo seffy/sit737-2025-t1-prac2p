@@ -95,3 +95,14 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 Login using the token.
 
 ---
+
+
+
+
+
+## 👤 Compiled by:
+
+**Jo. Sabana**  
+🔗 GitHub: [@seffy](https://github.com/seffy)
+
+
