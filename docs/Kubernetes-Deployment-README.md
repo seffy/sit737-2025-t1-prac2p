@@ -158,12 +158,10 @@ This should load the HireBuddy login page.
 GitHub repo: [https://github.com/seffy/sit737hirebuddy](https://github.com/seffy/sit737hirebuddy)
 
 ---
-
-## 👨‍💻 Compiled by:
+### 👨‍💻 Compiled by:
 
 **Jo. Sabana**  
-Student 
-SIT737 – Cloud-Native Application Development  
-Master of IT Management Professional, DU, T1 2025
-🔗 GitHub: [@seffy](https://github.com/seffy)
-📅 April 2025
+- Student, Master of IT Management Professional, DU, T1 2025
+- SIT737 – Cloud-Native Application Development  
+- 🔗 GitHub: [@seffy](https://github.com/seffy)
+- 📅 April 2025

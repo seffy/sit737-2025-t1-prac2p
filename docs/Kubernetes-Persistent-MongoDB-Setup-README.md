@@ -197,11 +197,10 @@ db.users.find().pretty()
 
 
 ---
-## 👨‍💻 Compiled by:
+### 👨‍💻 Compiled by:
 
 **Jo. Sabana**  
-Student 
-SIT737 – Cloud-Native Application Development  
-Master of IT Management Professional, DU, T1 2025
-🔗 GitHub: [@seffy](https://github.com/seffy)
-📅 April 2025
+- Student, Master of IT Management Professional, DU, T1 2025
+- SIT737 – Cloud-Native Application Development  
+- 🔗 GitHub: [@seffy](https://github.com/seffy)
+- 📅 April 2025

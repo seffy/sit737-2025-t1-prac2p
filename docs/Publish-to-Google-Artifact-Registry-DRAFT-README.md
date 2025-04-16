@@ -56,11 +56,10 @@ australia-southeast1-docker.pkg.dev/sit737-25t1-sabana-47965ad/hirebuddy/sit737h
 
 
 ---
-## 👨‍💻 Compiled by:
+### 👨‍💻 Compiled by:
 
 **Jo. Sabana**  
-Student 
-SIT737 – Cloud-Native Application Development  
-Master of IT Management Professional, DU, T1 2025
-🔗 GitHub: [@seffy](https://github.com/seffy)
-📅 April 2025
+- Student, Master of IT Management Professional, DU, T1 2025
+- SIT737 – Cloud-Native Application Development  
+- 🔗 GitHub: [@seffy](https://github.com/seffy)
+- 📅 April 2025
