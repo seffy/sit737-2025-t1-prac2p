@@ -6,16 +6,14 @@ This guide provides step-by-step instructions to deploy and access the Kubernete
 
 ## ✅ Step-by-Step Instructions
 
-### 1. Deploy the Dashboard
+### Deploy the Dashboard
 Run the following command to deploy the Dashboard:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 ```
 
----
-
-### 2. Start the Proxy
+###  Start the Proxy
 Start a local proxy to access the Dashboard:
 
 ```bash
@@ -29,7 +27,7 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 ---
 
-### 3. Create a Service Account
+## 3Create a Service Account
 
 dashboard-adminuser.yaml
 
