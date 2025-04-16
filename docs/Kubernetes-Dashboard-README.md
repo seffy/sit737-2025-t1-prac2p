@@ -4,30 +4,31 @@ This guide provides step-by-step instructions to deploy and access the Kubernete
 
 ---
 
-## ✅ Step-by-Step Instructions
+### ✅ Step-by-Step Instructions
 
-### Deploy the Dashboard
+## 1. Deploy the Dashboard
 Run the following command to deploy the Dashboard:
+This command downloads and applies the default deployment manifest:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 ```
 
-###  Start the Proxy
-Start a local proxy to access the Dashboard:
+This will install:
+	- The Dashboard web UI
+	- Role-based access control (RBAC) configurations
+	- The kubernetes-dashboard service in the kubernetes-dashboard namespace
+
+##  2. Start the Proxy
+Start a proxy to securely access the dashboard from your local machine:
 
 ```bash
 kubectl proxy
 ```
 
-Access the Dashboard at:
-```
-http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-```
+--- 
 
----
-
-## Create a Service Account
+## 3. Create a Service Account (Skip if done already)
 
 dashboard-adminuser.yaml
 
@@ -41,7 +42,7 @@ metadata:
 
 ---
 
-### Bind the Service Account to a Cluster Role
+## 4. Bind the Service Account to a Cluster Role (Skip if done already)
 
 cluster_role_binding.yaml
 
@@ -60,7 +61,7 @@ subjects:
   namespace: kubernetes-dashboard
 
 ```
-### Open Terminal
+## 5. Open Terminal
 Run:
 
 ```bash
@@ -74,17 +75,16 @@ kubectl apply -f cluster_role_binding.yaml
 
 ---
 
-### 6. Retrieve the Login Token
+## 6. Retrieve the Login Token
 
 ```bash
 kubectl -n kubernetes-dashboard create token admin-user
 ```
-
 Copy the token and paste it into the Dashboard login page.
 
----
 
-### 7. Access the Dashboard
+
+## 7. Access the Dashboard
 
 Go to the following URL in your browser:
 
