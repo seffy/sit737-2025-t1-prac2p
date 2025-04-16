@@ -2,8 +2,67 @@
 
 This document explains how to set up persistent storage for a MongoDB deployment in Kubernetes using a Persistent Volume (PV), Persistent Volume Claim (PVC), StorageClass, Service, and Deployment configuration.
 
+
+## Table of Contents
+
+- [Kubernetes Dashboard UI Deployment](#Kubernetes-Dashboard-UI-Deployment)
+- [Persistence in Kubernetes](#Persistence in Kubernetes)
+
+
+## 1. Deploy the Dashboard
+Run the following command to deploy the Dashboard:
+This command downloads and applies the default deployment manifest:
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+```
+
+This will install:
+	- The Dashboard web UI
+	- Role-based access control (RBAC) configurations
+	- The kubernetes-dashboard service in the kubernetes-dashboard namespace
+
+##  2. Start the Proxy
+Start a proxy to securely access the dashboard from your local machine:
+
+```bash
+kubectl proxy
+```
+
+--- 
+
+## 3. Retrieve the Login Token
+
+```bash
+kubectl -n kubernetes-dashboard create token admin-user
+```
+Copy the token and paste it into the Dashboard login page.
+
+
+## 4. Access the Dashboard
+Go to the following URL in your browser:
+
+```
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+```
+
+Login using the token.
+
 ---
 
+
+
+
+
+
+
+## Kubernetes Dashboard UI Deployment
+---
+
+
+
+## Persistence in Kubernetes
+---
 ## 1. Persistent Volume (PV)
 
 ```yaml
@@ -149,5 +208,5 @@ db.users.find().pretty()
 ## 👤 Compiled by
 
 **Jo. Sabana**  
-Master of IT Management Professional
+🔗 GitHub: [@seffy](https://github.com/seffy)
 📅 April 2025
