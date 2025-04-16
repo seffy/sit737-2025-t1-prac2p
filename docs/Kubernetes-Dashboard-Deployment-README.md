@@ -1,4 +1,4 @@
-# Kubernetes Dashboard Deployment Guide
+# 📦 Kubernetes Dashboard Deployment Guide
 
 This guide provides step-by-step instructions to deploy and access the Kubernetes Dashboard UI.
 
@@ -94,15 +94,19 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 Login using the token.
 
+
+
+
+
+
+
 ---
-
-
-
-
-
-## 👤 Compiled by:
+## 👨‍💻 Compiled by:
 
 **Jo. Sabana**  
+Student 
+SIT737 – Cloud-Native Application Development  
+Master of IT Management Professional, DU, T1 2025
 🔗 GitHub: [@seffy](https://github.com/seffy)
 📅 April 2025
 
