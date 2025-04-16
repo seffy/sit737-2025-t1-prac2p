@@ -9,6 +9,10 @@ This document explains how to set up persistent storage for a MongoDB deployment
 - [Persistence in Kubernetes](#Persistence in Kubernetes)
 
 
+
+## Kubernetes Dashboard UI Deployment
+---
+
 ## 1. Deploy the Dashboard
 Run the following command to deploy the Dashboard:
 This command downloads and applies the default deployment manifest:
@@ -51,13 +55,6 @@ Login using the token.
 ---
 
 
-
-
-
-
-
-## Kubernetes Dashboard UI Deployment
----
 
 
 
