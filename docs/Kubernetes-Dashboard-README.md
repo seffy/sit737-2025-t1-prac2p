@@ -27,7 +27,7 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 ---
 
-## 3Create a Service Account
+## Create a Service Account
 
 dashboard-adminuser.yaml
 
@@ -41,7 +41,7 @@ metadata:
 
 ---
 
-### 4. Bind the Service Account to a Cluster Role
+### Bind the Service Account to a Cluster Role
 
 cluster_role_binding.yaml
 
@@ -60,7 +60,7 @@ subjects:
   namespace: kubernetes-dashboard
 
 ```
-### 5. Open Terminal
+### Open Terminal
 Run:
 
 ```bash
