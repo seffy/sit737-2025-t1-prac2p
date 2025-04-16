@@ -6,14 +6,12 @@ This document explains how to set up persistent storage for a MongoDB deployment
 ## Table of Contents
 
 - [Kubernetes Dashboard UI Deployment](#Kubernetes-Dashboard-UI-Deployment)
-- [Persistence in Kubernetes](#Persistence in Kubernetes)
+- [Persistence in Kubernetes](#Persistence-in-Kubernetes)
 
-
+--- 
 
 ## Kubernetes Dashboard UI Deployment
----
-
-## 1. Deploy the Dashboard
+### 1. Deploy the Dashboard
 Run the following command to deploy the Dashboard:
 This command downloads and applies the default deployment manifest:
 
@@ -26,16 +24,15 @@ This will install:
 	- Role-based access control (RBAC) configurations
 	- The kubernetes-dashboard service in the kubernetes-dashboard namespace
 
-##  2. Start the Proxy
+###  2. Start the Proxy
 Start a proxy to securely access the dashboard from your local machine:
 
 ```bash
 kubectl proxy
 ```
 
---- 
 
-## 3. Retrieve the Login Token
+### 3. Retrieve the Login Token
 
 ```bash
 kubectl -n kubernetes-dashboard create token admin-user
@@ -43,7 +40,7 @@ kubectl -n kubernetes-dashboard create token admin-user
 Copy the token and paste it into the Dashboard login page.
 
 
-## 4. Access the Dashboard
+### 4. Access the Dashboard
 Go to the following URL in your browser:
 
 ```
@@ -54,13 +51,8 @@ Login using the token.
 
 ---
 
-
-
-
-
 ## Persistence in Kubernetes
----
-## 1. Persistent Volume (PV)
+### 1. Persistent Volume (PV)
 
 ```yaml
 apiVersion: v1
@@ -86,7 +78,7 @@ spec:
 
 ---
 
-## 2. Persistent Volume Claim (PVC)
+### 2. Persistent Volume Claim (PVC)
 
 ```yaml
 apiVersion: v1
@@ -104,7 +96,7 @@ spec:
 
 ---
 
-## 3. Storage Class
+### 3. Storage Class
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -118,7 +110,7 @@ reclaimPolicy: Delete
 
 ---
 
-## 4. MongoDB Service
+### 4. MongoDB Service
 
 ```yaml
 apiVersion: v1
@@ -138,7 +130,7 @@ spec:
 
 ---
 
-## 5. MongoDB Deployment
+### 5. MongoDB Deployment
 
 ```yaml
 apiVersion: apps/v1
