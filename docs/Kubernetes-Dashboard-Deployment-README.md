@@ -101,12 +101,12 @@ Login using the token.
 
 
 ---
-## 👨‍💻 Compiled by:
+### 👨‍💻 Compiled by:
 
 **Jo. Sabana**  
 - Student, Master of IT Management Professional, DU, T1 2025
 - SIT737 – Cloud-Native Application Development  
 - 🔗 GitHub: [@seffy](https://github.com/seffy)
-📅 April 2025
+- 📅 April 2025
 
 
