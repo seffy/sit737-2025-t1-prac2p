@@ -32,7 +32,7 @@ kubectl proxy
 
 dashboard-adminuser.yaml
 
-```bash
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -46,7 +46,7 @@ metadata:
 
 cluster_role_binding.yaml
 
-```bash
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
