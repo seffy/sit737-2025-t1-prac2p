@@ -15,9 +15,9 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/a
 ```
 
 This will install:
-	- The Dashboard web UI
-	- Role-based access control (RBAC) configurations
-	- The kubernetes-dashboard service in the kubernetes-dashboard namespace
+- The Dashboard web UI
+- Role-based access control (RBAC) configurations
+- The kubernetes-dashboard service in the kubernetes-dashboard namespace
 
 ##  2. Start the Proxy
 Start a proxy to securely access the dashboard from your local machine:
